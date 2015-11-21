@@ -1,2 +1,2 @@
 # meteor-js
-Docker image that bundles nodejs and meteor
+Docker image for Meteor.js apps
