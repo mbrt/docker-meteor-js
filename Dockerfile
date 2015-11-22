@@ -28,3 +28,5 @@ RUN cd ~                                                                && \
 
 VOLUME ["/home/meteor/app"]
 WORKDIR /home/meteor/app
+EXPOSE 3000
+CMD ["meteor"]
