@@ -19,6 +19,7 @@ RUN apt-get update                                                      && \
 
 USER meteor
 ENV HOME /home/meteor
+    PATH "$PATH:$HOME/.meteor"
     USER meteor
 
 # install meteor
