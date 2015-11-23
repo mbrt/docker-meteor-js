@@ -18,9 +18,9 @@ RUN apt-get update                                                      && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 USER meteor
-ENV HOME /home/meteor
-    PATH "$PATH:$HOME/.meteor"
-    USER meteor
+ENV HOME=/home/meteor                                                      \
+    PATH=$PATH:$HOME/.meteor                                               \
+    USER=meteor
 
 # install meteor
 RUN cd ~                                                                && \
